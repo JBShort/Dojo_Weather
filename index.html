@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>DojoWeather</h1>
+            <div class="nav-right">
+                <p onclick="alert('Loading weather report...')">Burbank</p>
+                <p onclick="alert('Loading weather report...')">Chicago</p>
+                <p onclick="alert('Loading weather report...')">Dallas</p>
+            </div>
+        </div>
+        <div class="header">
+            <h1>San Jose</h1>
+            <div class="header-right">
+                <p>show temperature in</p>
+                <select onchange="changeTemp(this)" name="temperature" id="temp">
+                    <option value="celsius">°C</option>
+                    <option value="Fahrenheight">°F</option>
+                </select>
+            </div>
+        </div>
+            <div class="main-content">
+                <div class="weatherblock">
+                    <h1>Today</h1>
+                    <img src="./assets/some_rain.png" alt="some rain">
+                    <p>some rain</p>
+                    <p><span id="changeNumber" class="day">23.9°</span> <span id="changeNumber" class="night">18.3°</span></p>
+                </div>
+                <div class="weatherblock">
+                    <h1>Tomorrow</h1>
+                    <img src="./assets/some_sun.png" alt="some sun">
+                    <p>some sun</p>
+                    <p><span id="changeNumber" class="day">26.7°</span> <span id="changeNumber" class="night">18.9°</span></p>
+                </div>
+                <div class="weatherblock">
+                    <h1>Friday</h1>
+                    <img src="./assets/some_clouds.png" alt="some clouds">
+                    <p>some clouds</p>
+                    <p><span id="changeNumber" class="day">20.6°</span> <span id="changeNumber" class="night">16.1°</span></p>
+                </div>
+                <div class="weatherblock">
+                    <h1>Saturday</h1>
+                    <img src="./assets/some_sun.png" alt="some sun">
+                    <p>some sun</p>
+                    <p><span id="changeNumber" class="day">25.6°</span> <span id="changeNumber" class="night">21.1°</span></p>
+                </div>
+            </div>
+            <div id="removepopup" class="popup">
+                <img src="./assets/cookie.png" alt="cookies">
+                <div class="popup-middle">
+                    <h2>Stop! Cookie time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="">Read more...</a></p>
+                </div>
+                <button onclick="goAway()">I accept</button>
+            </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

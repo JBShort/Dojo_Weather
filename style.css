@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 1080px;
+    margin: 0px auto;
+    font-family: cursive;
+}
+
+.nav{
+    background-color: rgb(128, 167, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 100px 15px 100px;
+    color: white;
+}
+
+.nav h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 2.5rem;
+}
+
+.nav-right{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.header{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+    border-radius: 3%;
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-right p{
+    padding-right: 20px;
+}
+
+#temp{
+    height: 30px;
+    width: 50px;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main-content{
+    height: 400px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0px auto;
+}
+
+.weatherblock{
+    max-width: 200px;
+    flex: 1;
+    background-color: rgb(211, 211, 211);
+}
+
+.weatherblock h1{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.weatherblock img{
+    height: 150px;
+    border-radius: 100%;
+    margin-left: 25px;
+}
+
+.weatherblock p{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 1.3rem;
+}
+
+.day{
+    font-size: 1.5rem;
+    color: red;
+    margin: 0px 10px;
+}
+
+.night{
+    font-size: 1.5rem;
+    color: royalblue;
+    margin: 0px 10px;
+}
+
+.popup{
+    height: 150px;
+    width: 900px;
+    background-color: rgb(211, 211, 211);
+    border: 4px solid black;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 400px;
+}
+
+.popup img{
+    height: 80px;
+    margin: 20px;
+}
+
+.popup-middle{
+    width: 650px;
+    font-size: 1.4rem;
+    padding-right: 20px;
+}
+
+.popup button{
+    width: 90px;
+    height: 30px;
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+}
